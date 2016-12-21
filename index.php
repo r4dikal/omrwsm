@@ -1,5 +1,5 @@
 <?php
-define('API_KEY','token');
+define('API_KEY','294191301:AAE9MWAGlonF0ZKr0jLA8CJM6AnrBUnZVYQ');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -52,7 +52,7 @@ $username = $update->message->from->username;
 $textmessage = isset($update->message->text)?$update->message->text:'';
 $reply = $update->message->reply_to_message->forward_from->id;
 $stickerid = $update->message->reply_to_message->sticker->file_id;
-$admin = 66443035;
+$admin = 28045510;
 $step = file_get_contents("data/".$from_id."/step.txt");
 
 //-------
@@ -90,7 +90,7 @@ if ($textmessage == '🔙 برگشت') {
 save("data/$from_id/step.txt","none");
 var_dump(makereq('sendMessage',[
         	'chat_id'=>$update->message->chat->id,
-        	'text'=>"سلــام 👋😉
+        	'text'=>"سلــام ✋🏼😃
 
 🔹 به سرویس پیام رسان تلگرام خوش آمدید 🌹.
 
@@ -98,7 +98,7 @@ var_dump(makereq('sendMessage',[
 
 🔹برای ساخت ربات از دکمه ی 🔄 ساخت ربات استفاده نمایید.
 
-🤖 @PvSazBot",
+🤖 @PvSaz98Bot",
 		'parse_mode'=>'MarkDown',
         	'reply_markup'=>json_encode([
             	'keyboard'=>[
@@ -224,7 +224,7 @@ var_dump(makereq('sendMessage',[
 
 🔹برای ساخت ربات از دکمه ی 🔄 ساخت ربات استفاده نمایید.
 
-🤖 @PvSazBot",
+🤖 @PvSaz98Bot",
 		'parse_mode'=>'MarkDown',
         	'reply_markup'=>json_encode([
             	'keyboard'=>[
